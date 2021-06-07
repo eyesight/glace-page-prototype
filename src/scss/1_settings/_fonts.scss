@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Satisfy&display=swap');
+
+// TYPE-FACE SETTINGS
+$type-face: 'Noto Sans', sans-serif !default;
+$type-face-write: 'Satisfy', cursive !default;
+
+$font-weight-regular: 400 !default;
+$font-weight-bold: 700 !default;
+
+// FONT-SIZE SETTINGS
+$font-settings-body: (
+    null: (1.6rem, 2.5rem),
+    md: (1.8rem, 2.6rem)
+) !default;
+
+$font-settings-h1: (
+    null: (1.6rem, 2.5rem),
+    md: (1.8rem, 2.6rem)
+) !default;
+
+$font-settings-h2: (
+    null: (1.6rem, 2.5rem),
+    md: (1.8rem, 2.6rem)
+) !default;
