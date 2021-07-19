@@ -1,0 +1,5 @@
+.button {
+  cursor: pointer;
+  @include hoverani();
+  @include font-size($font-settings-body);
+}

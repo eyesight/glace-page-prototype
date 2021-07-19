@@ -1,20 +1,140 @@
 <!DOCTYPE html>
 <html lang="ch-de">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Prototype Glace-Seite</title>
-    <meta name="description" content="Ice, icecream">
+    <meta name="description" content="Ice, icecream" />
 
     <!-- allStyles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="dist/css/style.css" rel="stylesheet">
-</head>
+    <link href="dist/css/style.css" rel="stylesheet" />
+  </head>
 
-<body> 
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__item header__left">
+            <nav class="navigation">
+              <div class="navigation__item">
+                <a class="navigation__link" href="#">Rezepte</a>
+              </div>
+            </nav>
+          </div>
+          <div class="header__item header__center">
+            <div class="logo">
+              <img class="logo__image" src="./dist/svg/logo.min.svg" />
+            </div>
+          </div>
+          <div class="header__item header__right">
+            <nav class="top-navigation">
+              <button class="top-navigation__item" href="#">Login</button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <div class="hero">
+          <div class="hero__title title-h1">
+            <h1 class="title-h1__title">Rezepte und mehr</h1>
+          </div>
+          <div
+            class="hero__image"
+            style="background-image: url('http://placekitten.com/2000/1500');"
+          ></div>
+        </div>
+        <button class="circle-btn">Suche/Filter</button>
+        <div class="tiles">
+          <div class="tiles__inner">
+            <div class="tiles__item">
+              <a class="tiles__link" href="#">
+                <figure class="tiles__fig">
+                  <img
+                    class="tiles__img"
+                    src="http://placekitten.com/2000/1500"
+                  />
+                </figure>
+                <div class="tiles__title">
+                  <p class="tiles__title-text">
+                    Rezept Blabla mit blabla
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tiles__item">
+              <a class="tiles__link" href="#">
+                <figure class="tiles__fig">
+                  <img
+                    class="tiles__img"
+                    src="http://placekitten.com/2500/1500"
+                  />
+                </figure>
+                <div class="tiles__title">
+                  <p class="tiles__title-text">
+                    Rezept Blabla mit blabla
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tiles__item">
+              <a class="tiles__link" href="#">
+                <figure class="tiles__fig">
+                  <img
+                    class="tiles__img"
+                    src="http://placekitten.com/2500/1500"
+                  />
+                </figure>
+                <div class="tiles__title">
+                  <p class="tiles__title-text">
+                    Rezept Blabla mit blabla
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tiles__item">
+              <a class="tiles__link" href="#">
+                <figure class="tiles__fig">
+                  <img
+                    class="tiles__img"
+                    src="http://placekitten.com/2500/1500"
+                  />
+                </figure>
+                <div class="tiles__title">
+                  <p class="tiles__title-text">
+                    Rezept Blabla mit blabla
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tiles__button-wrapper">
+            <button class="button button--fullwidth">mehr laden</button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__left"><p class="copyright">copyright</p></div>
+          <div class="footer__right">
+            <nav class="footer-nav">
+              <ul class="footer-nav__wrapper">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Impressum</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link">Über</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <div class="sidebar">
+        <div class="sidebar__inner"></div>
+      </div>
+    </div>
     <script type="text/javascript" src="dist/js/script.min.js"></script>
-</body>
+  </body>
 </html>

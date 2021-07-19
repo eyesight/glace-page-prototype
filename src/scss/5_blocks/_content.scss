@@ -1,0 +1,5 @@
+.content {
+  @include full-width;
+  flex: 1 0 auto;
+  @include ld-margin-bottom(3 * $gutter);
+}

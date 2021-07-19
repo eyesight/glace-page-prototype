@@ -9,16 +9,54 @@ $font-weight-bold: 700 !default;
 
 // FONT-SIZE SETTINGS
 $font-settings-body: (
-    null: (1.6rem, 2.5rem),
-    md: (1.8rem, 2.6rem)
+  null: (
+    1.6rem,
+    2.5rem,
+  ),
+  md: (
+    1.8rem,
+    2.6rem,
+  ),
 ) !default;
 
 $font-settings-h1: (
-    null: (1.6rem, 2.5rem),
-    md: (1.8rem, 2.6rem)
+  null: (
+    5rem,
+    4.5rem,
+  ),
+  md: (
+    7rem,
+    6.5rem,
+  ),
 ) !default;
 
 $font-settings-h2: (
-    null: (1.6rem, 2.5rem),
-    md: (1.8rem, 2.6rem)
+  null: (
+    2rem,
+    2.5rem,
+  ),
+  md: (
+    2.5rem,
+    2.9rem,
+  ),
 ) !default;
+
+$font-settings-h3: (
+  null: (
+    1.8rem,
+    2.2rem,
+  ),
+  md: (
+    2rem,
+    2.5rem,
+  ),
+) !default;
+
+$font-settings-small: (
+  null: (
+    1.4rem,
+    1.6rem,
+  ),
+) !default;
+
+$font-settings-tiles: $font-settings-h3;

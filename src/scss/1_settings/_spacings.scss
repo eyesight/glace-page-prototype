@@ -1,1 +1,28 @@
 $gutter: 15px !default;
+
+$space-s: (
+  null: (
+    $gutter,
+  ),
+  md: (
+    $gutter * 2,
+  ),
+) !default;
+
+$space-m: (
+  null: (
+    $gutter * 2,
+  ),
+  md: (
+    $gutter * 3,
+  ),
+) !default;
+
+$space-l: (
+  null: (
+    $gutter * 3,
+  ),
+  md: (
+    $gutter * 4,
+  ),
+) !default;

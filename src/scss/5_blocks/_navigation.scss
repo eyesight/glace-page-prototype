@@ -1,0 +1,6 @@
+.navigation__link,
+.top-navigation__item {
+  @include hoverani();
+  @include font-size($font-settings-body);
+  cursor: pointer;
+}

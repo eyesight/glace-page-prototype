@@ -1,0 +1,26 @@
+.header {
+  @include full-width;
+  flex-shrink: 0;
+}
+
+.header__inner {
+  @include flexbox();
+}
+
+.header__item {
+  flex: 1 33%;
+  margin-top: $gutter;
+}
+
+.header__right {
+  justify-items: flex-end;
+}
+
+.header__center {
+  margin-top: 0;
+  @include flexbox(row, wrap, center, flex-start);
+}
+
+.logo {
+  display: inline-block;
+}

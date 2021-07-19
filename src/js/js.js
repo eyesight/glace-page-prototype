@@ -14,3 +14,11 @@ class App {
 window.onload = () => {
   new App();
 }
+
+function fetchSomething() {
+  fetch(url).then(() => {
+
+  }).catch((err) => {
+
+  })
+}

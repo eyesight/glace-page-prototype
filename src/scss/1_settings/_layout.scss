@@ -1,7 +1,5 @@
-$col-count: 24; // define how many collumns the general overlaying grid has 
-$one-col: 100% / $col-count * 1; 
+$col-count: 12; // define how many collumns the general overlaying grid has
+$one-col: 100% / $col-count * 1;
 
-
-$max-width-full: 1440px !default;
+$max-width-full: 1980px !default;
 $max-width-content: 1280px !default;
-

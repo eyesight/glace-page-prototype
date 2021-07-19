@@ -1,15 +1,38 @@
-@mixin full-width(){
+@mixin full-width($isReset: false) {
   width: calc(100% - #{$gutter * 2});
   margin-left: auto;
   margin-right: auto;
 
   @include md-min() {
-    width: calc(100% - #{$gutter * 7});
+    width: calc(100% - #{$gutter * 4});
+    max-width: $max-width-full;
+  }
+
+  @if $isReset == true {
+    padding-left: $gutter;
+    padding-right: $gutter;
+    @include md-min() {
+      padding-left: $gutter * 2;
+      padding-right: $gutter * 2;
+    }
+  } @else {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin full-width-stretch() {
+  width: calc(100% + #{$gutter * 2});
+  margin-left: -$gutter;
+
+  @include md-min() {
+    width: calc(100% + #{$gutter * 4});
+    margin-left: -($gutter * 2);
     max-width: $max-width-full;
   }
 }
 
-@mixin content-width(){
+@mixin content-width() {
   width: calc(100% - #{$gutter * 2});
   margin-left: auto;
   margin-right: auto;
@@ -17,19 +40,19 @@
   @include sm-min {
     width: calc(100% - #{$gutter * 6});
   }
-  
+
   @include md-min() {
     max-width: $max-width-content;
     width: 80%;
   }
 }
 
-@mixin screen-width(){
+@mixin screen-width() {
   width: 100%;
   max-width: 100%;
 }
 
-@mixin reset-width(){
+@mixin reset-width() {
   width: 100%;
   max-width: 100%;
 }

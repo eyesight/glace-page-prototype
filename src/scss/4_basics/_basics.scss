@@ -1,15 +1,25 @@
 html {
   font-size: 62.5%;
   width: 100%;
+  height: 100%;
 }
 
 body {
   @include font($type-face, $font-weight-regular);
   @include font-size($font-settings-body);
   color: $color-main-text;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-*, *:before, *:after {
+.page {
+  @include flexbox(column, nowrap);
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -58,13 +68,18 @@ a {
   color: $color-main-text;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: $color-main-text;
     text-decoration: none;
+
+    &::after {
+      height: 10px;
+      transition: all 0.2s ease-in;
+    }
   }
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -81,39 +96,40 @@ li{
   word-wrap: normal !important;
 }
 
-
 .no-focus {
   *:focus {
     outline: 0;
     box-shadow: none;
   }
 }
-button{
+button {
   border: none;
   background: none;
+  padding: 0;
+  margin: 0;
 }
-button:focus { 
-  outline: none; 
+button:focus {
+  outline: none;
 }
 
-figure{
+figure {
   margin: 0;
 }
 
-.mobile-only{
+.mobile-only {
   display: none;
-  @include sm-max(){
+  @include sm-max() {
     display: block;
   }
 }
 
-.desktop-only{
+.desktop-only {
   display: block;
-  @include sm-max(){
+  @include sm-max() {
     display: none;
   }
 }
 
-strong{
+strong {
   font-weight: $font-weight-bold;
 }

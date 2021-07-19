@@ -1,0 +1,9 @@
+@mixin gridItem($cols) {
+  $col-gap: (($cols - 1) * $gutter) / $cols;
+  $percentage: 100% / $cols;
+  width: calc(#{$percentage} - #{$col-gap});
+
+  &:nth-child(n + #{$cols + 1}) {
+    margin-top: $gutter;
+  }
+}
