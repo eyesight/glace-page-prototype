@@ -1,10 +1,22 @@
 .header {
-  @include full-width;
+  @include full-width-stretch;
   flex-shrink: 0;
+  z-index: 100;
+  background-color: $color-white;
+  position: fixed;
+
+  .header--small & {
+    top: 0;
+  }
+
+  .header--small-ani & {
+    top: 0;
+  }
 }
 
 .header__inner {
   @include flexbox();
+  @include full-width($isReset: true);
 }
 
 .header__item {

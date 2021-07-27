@@ -1,4 +1,5 @@
 import Helper from './Helper';
+import ScrollHeader from './Class/ScrollHeader';
 
 class App {
   constructor() {
@@ -6,19 +7,13 @@ class App {
   }
 
   bindEvents() {
-    console.log('hello');
+    console.log('hello2');
   }
 
 }
 
 window.onload = () => {
-  new App();
+  //new App();
+  new ScrollHeader();
 }
 
-function fetchSomething() {
-  fetch(url).then(() => {
-
-  }).catch((err) => {
-
-  })
-}
