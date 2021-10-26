@@ -1,12 +1,12 @@
 .tiles {
-  @include full-width-stretch;
   @include font-size($font-settings-tiles);
   @include font($type-face, $font-weight-bold);
   background-color: $color-white;
+  width: 100%;
 }
 
 .tiles__inner {
-  @include full-width;
+  @include full-width($isReset: true);
   @include flexbox(row, wrap, space-between, flex-start);
   padding-top: 2 * $gutter;
   @include ld-margin-bottom(2 * $gutter);

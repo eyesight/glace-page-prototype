@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  @include full-width-stretch;
+  width: 100%;
 }
 
 .hero__image {
@@ -13,4 +13,5 @@
 
 .hero__title {
   margin-top: $gutter;
+  @include full-width($isReset: true);
 }

@@ -1,6 +1,6 @@
 .footer {
   @include flexbox(row, wrap, space-between, flex-start);
-  @include full-width-stretch;
+  width: 100%;
   flex-shrink: 0;
   background-color: $color-blue-dark;
   padding: $gutter 0;
