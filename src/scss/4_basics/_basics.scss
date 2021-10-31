@@ -38,8 +38,14 @@ h2 {
   @include font-size($font-settings-h2);
 }
 
-h3,
-h4,
+h3 {
+  @include font-size($font-settings-h3);
+}
+
+h4 {
+  @include font-size($font-settings-h4);
+}
+
 h5,
 h6 {
   @include font-size($font-settings-body);
@@ -108,6 +114,8 @@ button {
   background: none;
   padding: 0;
   margin: 0;
+  @include font-size($font-settings-body);
+  @include font($type-face, $font-weight-medium);
 }
 
 button:focus {

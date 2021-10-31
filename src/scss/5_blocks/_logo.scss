@@ -1,7 +1,10 @@
-.logo__image {
-  width: 200px;
+.logo {
+  text-transform: uppercase;
+  @include font-size($font-settings-h3);
+  @include font($type-face, $font-weight-medium);
+}
 
-  .header--small & {
-    width: 100px;
-  }
+.logo__link {
+  display: inline-block;
+  padding: 30px 0;
 }

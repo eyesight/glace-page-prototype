@@ -15,12 +15,8 @@
 }
 
 .header__inner {
-  @include flexbox(row, wrap, flex-start, center);
+  @include flexbox(row, wrap, space-between, center);
   @include full-width($isReset: true);
-}
-
-.header__item {
-  flex: 1 33%;
 }
 
 .header__right {
@@ -30,9 +26,4 @@
 .header__center {
   margin-top: 0;
   @include flexbox(row, wrap, center, flex-start);
-}
-
-.logo {
-  display: inline-block;
-  padding: 10px;
 }
