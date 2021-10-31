@@ -1,52 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@400;500;700&display=swap');
 
 // TYPE-FACE SETTINGS
-$type-face: 'Noto Sans', sans-serif !default;
-$type-face-write: 'Satisfy', cursive !default;
+$type-face: 'Montserrat', sans-serif !default;
+$type-face-write: 'Lora', serif !default;
 
 $font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
 $font-weight-bold: 700 !default;
 
 // FONT-SIZE SETTINGS
 $font-settings-body: (
   null: (
-    1.6rem,
-    2.5rem,
-  ),
-  md: (
-    1.8rem,
-    2.6rem,
+    1.7rem,
+    2.8rem,
   ),
 ) !default;
 
 $font-settings-h1: (
   null: (
-    5rem,
-    4.5rem,
-  ),
-  md: (
-    7rem,
-    6.5rem,
+    7.5rem,
+    8.5rem,
   ),
 ) !default;
 
 $font-settings-h2: (
   null: (
-    2rem,
-    2.5rem,
-  ),
-  md: (
-    2.5rem,
-    2.9rem,
+    3.5rem,
+    4rem,
   ),
 ) !default;
 
 $font-settings-h3: (
   null: (
-    1.8rem,
-    2.2rem,
+    2.5rem,
+    2.8rem,
   ),
-  md: (
+) !default;
+
+$font-settings-h4: (
+  null: (
     2rem,
     2.5rem,
   ),
@@ -54,9 +46,9 @@ $font-settings-h3: (
 
 $font-settings-small: (
   null: (
-    1.4rem,
-    1.6rem,
+    1.5rem,
+    2.2rem,
   ),
 ) !default;
 
-$font-settings-tiles: $font-settings-h3;
+$font-settings-tiles: $font-settings-h4;
