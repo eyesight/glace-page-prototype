@@ -6,15 +6,12 @@ html {
 
 body {
   @include font($type-face, $font-weight-regular);
-  @include font-size($font-settings-body);
+  @include fluid-font-size();
   color: $color-main-text;
   height: 100%;
   overflow-x: hidden;
-}
-
-.page {
-  @include flexbox(column, nowrap);
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 *,
@@ -48,7 +45,7 @@ h4 {
 
 h5,
 h6 {
-  @include font-size($font-settings-body);
+  //@include font-size($font-settings-body);
 }
 
 img {

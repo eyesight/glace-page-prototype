@@ -2,4 +2,7 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: yellow;
+  @include content-width();
+  //@include grid(9);
 }

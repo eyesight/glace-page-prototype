@@ -9,7 +9,7 @@
 
 .footer__inner {
   @include flexbox(row, wrap, space-between, flex-start);
-  @include full-width($isReset: true);
+  @include full-width();
 }
 
 .footer__right {

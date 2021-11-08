@@ -1,2 +1,5 @@
 .content {
+  width: 100%;
+  @include flexbox(column, wrap, center, flex-start);
+  flex: 1 0 auto;
 }

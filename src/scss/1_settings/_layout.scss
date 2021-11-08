@@ -1,6 +1,12 @@
-$col-count: 9; // define how many collumns the general overlaying grid has
-$one-col: 100% / $col-count * 1;
+$col-count: 9 !default;
+$gap-const: 2.5% !default;
+$gap-in-px: 20px !default;
+$gutter: $gap-in-px !default;
 
 // $max-width-full: 1980px !default;
 $max-width-full: 1980px !default;
 $max-width-content: 1440px !default;
+
+//for the fluid typography
+$vp-small: 480px;
+$vp-large: 1200px;

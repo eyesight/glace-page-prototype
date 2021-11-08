@@ -13,5 +13,5 @@
 
 .hero__title {
   margin-top: $gutter;
-  @include full-width($isReset: true);
+  @include full-width();
 }

@@ -1,4 +1,9 @@
 .tiles {
-  @include font-size($font-settings-tiles);
-  @include font($type-face, $font-weight-bold);
+  @include content-width(true);
+  //@include grid-container();
+}
+
+.tiles__item {
+  background-color: yellow;
+  @include grid(3);
 }

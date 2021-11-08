@@ -3,7 +3,6 @@
   flex-shrink: 0;
   z-index: 100;
   background-color: $color-white;
-  position: fixed;
 
   .header--small & {
     top: 0;
@@ -16,7 +15,7 @@
 
 .header__inner {
   @include flexbox(row, wrap, space-between, center);
-  @include full-width($isReset: true);
+  @include full-width();
 }
 
 .header__right {

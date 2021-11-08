@@ -8,18 +8,32 @@ $font-weight-regular: 400 !default;
 $font-weight-medium: 500 !default;
 $font-weight-bold: 700 !default;
 
+// Breakpoints for the fluid fonts
+$font-breakpoints-s: 600px !default;
+$font-breakpoints-m: 1000px !default;
+$font-breakpoints-l: 1200px !default;
+
+// FLUID FONT-SIZE SETTINGS
+$font-size-body-s: 17px;
+$font-size-body-m: 20px;
+$line-height-body: 1.2;
+
 // FONT-SIZE SETTINGS
 $font-settings-body: (
   null: (
-    1.7rem,
-    2.8rem,
+    17px,
+    20px,
   ),
 ) !default;
 
 $font-settings-h1: (
-  null: (
-    7.5rem,
-    8.5rem,
+  s: (
+    17px,
+    28px,
+  ),
+  m: (
+    20px,
+    28px,
   ),
 ) !default;
 
