@@ -60,16 +60,6 @@ $width-of-design: 1024px; //width of design to calc
   }
 }
 
-@mixin grid-width(
-  $width: $col-count,
-  $gap-constant: $gap-const,
-  $col-count: $col-count
-) {
-  width: calc(100% - #{$gutter * 2});
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @mixin screen-width() {
   width: 100%;
   max-width: 100%;

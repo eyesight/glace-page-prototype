@@ -5,15 +5,28 @@
   --columns: #{$col-count};
 }
 
-@mixin grid($col: $col, $col-count: $col-count, $gap-constant: $gap-const) {
+@mixin grid(
+  $col: $col,
+  $shift-count: 0,
+  $col-count: $col-count,
+  $gap-constant: $gap-const
+) {
   --width: #{$col};
   --gap-constant: #{$gap-const};
   --initialbasis: calc(
     (var(--width, 0) / var(--columns, #{$col-count}) * 100%) - #{$gap-constant}
   );
+  $gap-no-unit: strip-unit($gap-constant);
+  $shift: 100 / $col-count * $shift-count + ($gap-no-unit / 2) * 1%;
+  @debug $col-count;
+  @debug $shift-count;
   flex-basis: var(--initialbasis);
   margin-left: calc(#{$gap-constant} / 2);
   margin-right: calc(#{$gap-constant} / 2);
+
+  @if $shift-count > 0 {
+    margin-left: $shift;
+  }
 }
 
 /* 
