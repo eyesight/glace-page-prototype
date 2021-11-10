@@ -1,9 +1,8 @@
 .tiles {
   @include content-width(true);
-  //@include grid-container();
 }
 
 .tiles__item {
-  background-color: yellow;
   @include grid(3);
+  margin-bottom: $gap-const;
 }

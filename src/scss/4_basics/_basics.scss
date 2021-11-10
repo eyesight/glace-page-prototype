@@ -140,14 +140,3 @@ figure {
 strong {
   font-weight: $font-weight-bold;
 }
-
-.test {
-  height: 20px;
-  @include content-width(true);
-
-  p {
-    width: 100%;
-    @include grid(3, 6);
-    background-color: green;
-  }
-}

@@ -18,14 +18,13 @@
   );
   $gap-no-unit: strip-unit($gap-constant);
   $shift: 100 / $col-count * $shift-count + ($gap-no-unit / 2) * 1%;
-  @debug $col-count;
-  @debug $shift-count;
   flex-basis: var(--initialbasis);
-  margin-left: calc(#{$gap-constant} / 2);
   margin-right: calc(#{$gap-constant} / 2);
 
   @if $shift-count > 0 {
     margin-left: $shift;
+  } @else {
+    margin-left: calc(#{$gap-constant} / 2);
   }
 }
 
