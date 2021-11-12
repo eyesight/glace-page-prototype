@@ -2,7 +2,23 @@
   @include content-width(true);
 }
 
+.tiles__title {
+  @include font($type-face-write, $font-weight-medium);
+}
+
 .tiles__item {
   @include grid(3);
-  margin-bottom: $gap-const;
+  margin-bottom: 2 * $gap-const;
+}
+
+.tiles__image-wrapper {
+  @include responsive-ratio(100%, 16, 9, 'img');
+}
+
+.tiles__img {
+  object-fit: cover;
+}
+
+.tiles__item-inner {
+  padding: 1.5rem 4rem;
 }

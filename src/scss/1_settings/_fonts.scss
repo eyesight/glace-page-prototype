@@ -16,7 +16,23 @@ $font-breakpoints-l: 1200px !default;
 // FLUID FONT-SIZE SETTINGS
 $font-size-body-s: 17px;
 $font-size-body-m: 20px;
-$line-height-body: 1.2;
+$line-height-body: $font-size-body-m;
+
+$font-size-h1-s: 45px;
+$font-size-h1-m: 75px;
+$line-height-h1: 1.13;
+
+$font-size-h2-s: 20px;
+$font-size-h2-m: 35px;
+$line-height-h2: 1.13;
+
+$font-size-h3-s: 18px;
+$font-size-h3-m: 20px;
+$line-height-h3: 1.25;
+
+$font-size-info-s: 14px;
+$font-size-info-m: 16px;
+$line-height-info: 1.2;
 
 // FONT-SIZE SETTINGS
 $font-settings-body: (
@@ -27,13 +43,9 @@ $font-settings-body: (
 ) !default;
 
 $font-settings-h1: (
-  s: (
-    17px,
-    28px,
-  ),
-  m: (
-    20px,
-    28px,
+  null: (
+    3.5rem,
+    4rem,
   ),
 ) !default;
 

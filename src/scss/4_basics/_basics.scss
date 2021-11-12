@@ -7,6 +7,7 @@ html {
 body {
   @include font($type-face, $font-weight-regular);
   @include fluid-font-size();
+  line-height: line-height($line-height-body);
   color: $color-main-text;
   height: 100%;
   overflow-x: hidden;
@@ -20,7 +21,10 @@ body {
   box-sizing: border-box;
 }
 
-h1,
+h1 {
+  @include font($type-face-write, $font-weight-regular);
+}
+
 h2,
 h3,
 h4 {
@@ -28,15 +32,20 @@ h4 {
 }
 
 h1 {
-  @include font-size($font-settings-h1);
+  @include fluid-font-size($font-size-h1-s, $font-size-h1-m);
+  line-height: $line-height-h1;
 }
 
 h2 {
-  @include font-size($font-settings-h2);
+  @include fluid-font-size($font-size-h2-s, $font-size-h2-m);
+  @include font($type-face-write, $font-weight-medium);
+  line-height: $line-height-h2;
 }
 
 h3 {
-  @include font-size($font-settings-h3);
+  @include fluid-font-size($font-size-h3-s, $font-size-h3-m);
+  @include font($type-face-write, $font-weight-medium);
+  line-height: $line-height-h3;
 }
 
 h4 {

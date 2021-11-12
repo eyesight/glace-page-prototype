@@ -1,28 +1,5 @@
-$gutter: 20px !default;
-
-$space-s: (
-  null: (
-    15px,
-  ),
-) !default;
-
-$space-m: (
-  null: (
-    50px,
-  ),
-) !default;
-
-$space-ml: (
-  null: (
-    60px,
-  ),
-) !default;
-
-$space-l: (
-  null: (
-    150px,
-  ),
-) !default;
+$spacing-m: 6rem;
+$spacing-l: 15rem;
 
 /* $gutter: 20px !default;
 $max-width: 960px !default;

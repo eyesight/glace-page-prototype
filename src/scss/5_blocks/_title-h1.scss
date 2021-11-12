@@ -1,8 +1,6 @@
 .title-h1 {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: yellow;
   @include content-width();
+  @include ld-margin-bottom($spacing-m);
   //@include grid(9);
 }
