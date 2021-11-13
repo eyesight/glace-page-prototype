@@ -1,18 +1,36 @@
 .tiles {
   @include content-width(true);
+  @include ld-margin-bottom(2.5 * $gap-const);
 }
 
 .tiles__title {
   @include font($type-face-write, $font-weight-medium);
+  @include ld-margin-bottom($spacing-xs);
 }
 
 .tiles__item {
   @include grid(3);
-  margin-bottom: 2 * $gap-const;
+  margin-bottom: 3.5%;
 }
 
 .tiles__image-wrapper {
   @include responsive-ratio(100%, 16, 9, 'img');
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: background 0.5s ease;
+
+    .tiles__item:hover & {
+      background-color: $color-primary;
+      transition: background 0.25s ease;
+    }
+  }
 }
 
 .tiles__img {
@@ -20,5 +38,5 @@
 }
 
 .tiles__item-inner {
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 4rem 4rem;
 }
