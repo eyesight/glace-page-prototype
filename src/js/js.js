@@ -1,19 +1,14 @@
-import Helper from './Helper';
 import ScrollHeader from './Class/ScrollHeader';
-
-class App {
-  constructor() {
-    this.bindEvents();
-  }
-
-  bindEvents() {
-    console.log('hello2');
-  }
-
-}
+import Cursor from './Class/Cursor';
 
 window.onload = () => {
   //new App();
   new ScrollHeader();
+  new Cursor({
+    hoverEl: '.tiles__item',
+    cursor: '.custom-cursor',
+    cursorEye: '.custom-cursor__eye',
+    className: 'is-visible'
+  });
 }
 

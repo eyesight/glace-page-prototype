@@ -1,0 +1,36 @@
+.custom-cursor {
+  position: fixed;
+  top: -40px;
+  left: -40px;
+  z-index: 11000;
+  pointer-events: none;
+  user-select: none;
+  cursor: none;
+  height: 80px;
+  width: 80px;
+  color: $color-black;
+
+  svg {
+    width: 100%;
+    height: auto;
+    margin-bottom: $gap-in-px;
+  }
+}
+
+.custom-cursor__eye {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+  transition: all 0.15s ease-in;
+  .is-visible & {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+  }
+}
+
+.custom-cursor__text {
+  display: block;
+  width: 100%;
+  margin-bottom: $gap-in-px;
+  text-align: center;
+}

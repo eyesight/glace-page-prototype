@@ -28,7 +28,6 @@ class ScrollHeader {
   }
 
   addClass(lastKnownScrollPosition, headerheight) {
-    //this.content.style.paddingTop = headerheight + "px";
     if (lastKnownScrollPosition > headerheight) {
       Helper.addClass(this.body, this.headerClass);
     } else {

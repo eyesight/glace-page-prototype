@@ -3,6 +3,7 @@
   flex-shrink: 0;
   z-index: 100;
   background-color: $color-white;
+  position: fixed;
 
   .header--small & {
     top: 0;

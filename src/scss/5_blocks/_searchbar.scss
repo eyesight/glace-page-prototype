@@ -21,7 +21,8 @@ input.searchbar__searchfield {
     transition: all 0.5s ease;
     outline: none;
 
-    &::placeholder {
+    &::placeholder,
+    + .searchbar__icon-wrapper {
       color: $color-white;
     }
   }
@@ -29,4 +30,13 @@ input.searchbar__searchfield {
   &::placeholder {
     color: rgba($color-black, 0.5);
   }
+}
+
+.searchbar__icon-wrapper {
+  @include size(1.7rem);
+  position: absolute;
+  right: $gutter;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba($color-black, 0.5);
 }

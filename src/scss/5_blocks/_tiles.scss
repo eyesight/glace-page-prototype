@@ -6,6 +6,12 @@
 .tiles__title {
   @include font($type-face-write, $font-weight-medium);
   @include ld-margin-bottom($spacing-xs);
+
+  .tiles__item:hover &,
+  .tiles__item:focus &,
+  .tiles__item:focus-visible & {
+    color: $color-primary;
+  }
 }
 
 .tiles__item {
@@ -26,7 +32,9 @@
     top: 0;
     transition: background 0.5s ease;
 
-    .tiles__item:hover & {
+    .tiles__item:hover &,
+    .tiles__item:focus &,
+    .tiles__item:focus-visible & {
       background-color: $color-primary;
       transition: background 0.25s ease;
     }
