@@ -6,12 +6,6 @@
 .tiles__title {
   @include font($type-face-write, $font-weight-medium);
   @include ld-margin-bottom($spacing-xs);
-
-  .tiles__item:hover &,
-  .tiles__item:focus &,
-  .tiles__item:focus-visible & {
-    color: $color-primary;
-  }
 }
 
 .tiles__item {
@@ -35,7 +29,7 @@
     .tiles__item:hover &,
     .tiles__item:focus &,
     .tiles__item:focus-visible & {
-      background-color: $color-primary;
+      background-color: rgba($color-primary, 0.3);
       transition: background 0.25s ease;
     }
   }
@@ -47,4 +41,24 @@
 
 .tiles__item-inner {
   padding: 1.5rem 4rem 4rem;
+}
+
+.tiles__button {
+  @include flexbox(row, wrap, flex-start, center);
+  cursor: pointer;
+}
+
+.tiles__icon-smile {
+  @include size(2.5rem);
+  margin-right: 1rem;
+}
+
+.tiles__anchor {
+  width: 100%;
+
+  .tiles__item:hover &,
+  .tiles__item:focus &,
+  .tiles__item:focus-visible & {
+    color: $color-primary;
+  }
 }

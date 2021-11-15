@@ -52,11 +52,6 @@ h4 {
   @include font-size($font-settings-h4);
 }
 
-h5,
-h6 {
-  //@include font-size($font-settings-body);
-}
-
 img {
   max-width: 100%;
   height: auto;

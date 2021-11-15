@@ -5,7 +5,7 @@ window.onload = () => {
   //new App();
   new ScrollHeader();
   new Cursor({
-    hoverEl: '.tiles__item',
+    hoverEl: '.tiles__anchor',
     cursor: '.custom-cursor',
     cursorEye: '.custom-cursor__eye',
     className: 'is-visible'

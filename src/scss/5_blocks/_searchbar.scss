@@ -1,6 +1,11 @@
 .searchbar {
   @include content-width();
   @include ld-margin-bottom($spacing-l);
+  @include flexbox(row, wrap, center, flex-start);
+}
+
+.searchbar__searchfield-wrapper {
+  width: 80%;
 }
 
 input.searchbar__searchfield {

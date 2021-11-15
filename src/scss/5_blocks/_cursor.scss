@@ -1,19 +1,16 @@
 .custom-cursor {
   position: fixed;
-  top: -40px;
-  left: -40px;
+  top: -32px;
+  left: -32px;
   z-index: 11000;
   pointer-events: none;
   user-select: none;
   cursor: none;
-  height: 80px;
-  width: 80px;
-  color: $color-black;
+  color: $color-white;
 
   svg {
-    width: 100%;
+    width: 60%;
     height: auto;
-    margin-bottom: $gap-in-px;
   }
 }
 
@@ -21,6 +18,11 @@
   opacity: 0;
   transform: scale(0.5, 0.5);
   transition: all 0.15s ease-in;
+  background-color: $color-primary;
+  border-radius: 50%;
+  @include size(6.4rem);
+  @include flexbox(row, wrap, center, center);
+
   .is-visible & {
     opacity: 1;
     transform: scale(1, 1);
