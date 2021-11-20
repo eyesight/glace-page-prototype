@@ -22,7 +22,15 @@
   @include line-height-rythm($heightValue);
 }
 
-@function line-height($heightValue) {
-  $result: (0.0625 * $heightValue);
+@function line-height($typesize, $lineheight) {
+  @if type-of($typesize) == 'number' and not unitless($typesize) {
+    @return $typesize / ($typesize * 0 + 1);
+  }
+
+  @if type-of($lineheight) == 'number' and not unitless($lineheight) {
+    @return $lineheight / ($lineheight * 0 + 1);
+  }
+  $result: (100 / $typesize * $lineheight);
+
   @return $result;
 }

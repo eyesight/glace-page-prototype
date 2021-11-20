@@ -13,7 +13,7 @@ input.searchbar__searchfield {
   border-radius: 10rem;
   padding: 1.5rem 2.5rem;
   @include fluid-font-size($font-size-info-s, $font-size-info-m);
-  line-height: line-height($line-height-info);
+  line-height: $line-height-info;
   border: 2px solid $color-primary;
   transition: background 0.5s ease;
 
