@@ -5,7 +5,11 @@
 }
 
 .searchbar__searchfield-wrapper {
-  width: 80%;
+  width: 100%;
+
+  @include md-min {
+    width: 80%;
+  }
 }
 
 input.searchbar__searchfield {

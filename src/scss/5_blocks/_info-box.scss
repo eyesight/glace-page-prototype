@@ -14,8 +14,16 @@
 }
 
 .info-box__list {
-  column-count: 3;
-  column-gap: 1.45%;
+  column-gap: 1.17em;
+  column-count: 1;
+
+  @include sm-min {
+    column-count: 2;
+  }
+
+  @include md-min {
+    column-count: 3;
+  }
 }
 
 .info-box__list-item {

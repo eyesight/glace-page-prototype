@@ -6,11 +6,20 @@
 .tiles__title {
   @include font($type-face-serif, $font-weight-medium);
   @include ld-margin-bottom($spacing-xs);
+  width: 100%;
 }
 
 .tiles__item {
-  @include grid(3);
+  @include grid(9);
   margin-bottom: 3.5%;
+
+  @include md-min {
+    @include grid(4.5);
+  }
+
+  @include lg-min {
+    @include grid(3);
+  }
 }
 
 .tiles__image-wrapper {
@@ -40,7 +49,11 @@
 }
 
 .tiles__item-inner {
-  padding: 1.5rem 4rem 4rem;
+  padding: 1.5rem;
+
+  @include lg-min {
+    padding: 1.5rem 4rem 4rem;
+  }
 }
 
 .tiles__button {

@@ -1,18 +1,22 @@
 .fullscreen-image {
   width: 100%;
-  height: 100vh;
+  height: auto;
+
+  @include md-min {
+    height: 100vh;
+  }
 }
 
 .fullscreen-image__image {
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 50%;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  position: relative;
   z-index: -1;
-  transform: translateY(-50%);
+
+  @include md-min {
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+    position: fixed;
+    top: 50%;
+  }
 }
