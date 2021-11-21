@@ -1,5 +1,6 @@
 $container-with-design: 774px; //container-with in design to calculate the width
 $width-of-design: 1024px; //width of design to calc
+$width-of-col-design: 68px; //width of one column in design
 
 @mixin full-width() {
   width: calc(100% - #{$gutter * 2});

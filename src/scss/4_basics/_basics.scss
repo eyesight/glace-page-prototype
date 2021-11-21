@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-  @include font($type-face-write, $font-weight-regular);
+  @include font($type-face-serif, $font-weight-regular);
 }
 
 h2,
@@ -38,13 +38,13 @@ h1 {
 
 h2 {
   @include fluid-font-size($font-size-h2-s, $font-size-h2-m);
-  @include font($type-face-write, $font-weight-medium);
+  @include font($type-face-serif, $font-weight-medium);
   line-height: $line-height-h2;
 }
 
 h3 {
   @include fluid-font-size($font-size-h3-s, $font-size-h3-m);
-  @include font($type-face-write, $font-weight-medium);
+  @include font($type-face-serif, $font-weight-medium);
   line-height: $line-height-h3;
 }
 

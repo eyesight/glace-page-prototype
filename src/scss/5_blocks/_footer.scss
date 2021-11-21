@@ -2,12 +2,18 @@
   @include flexbox(row, wrap, space-between, flex-start);
   width: 100%;
   flex-shrink: 0;
-  background-color: $color-turkies;
-  padding: $gutter 0;
-  color: $color-white;
+  background-color: $color-white;
+  padding-top: $spacing-ml;
 }
 
 .footer__inner {
+  padding: $gutter 0;
+  width: 100%;
+  background-color: $color-turkies;
+  color: $color-white;
+}
+
+.footer__wrap {
   @include flexbox(row, wrap, space-between, flex-start);
   @include full-width();
 }
