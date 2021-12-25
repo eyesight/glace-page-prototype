@@ -19,6 +19,7 @@
 
 .tiles-round__image {
   border-radius: 50%;
+  object-fit: cover;
 }
 .tiles-round__item-nr {
   font-weight: $font-weight-bold;

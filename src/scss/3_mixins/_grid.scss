@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin grid-container($col-count: $col-count) {
   display: flex;
   flex-flow: row wrap;
@@ -17,7 +19,8 @@
     (var(--width, 0) / var(--columns, #{$col-count}) * 100%) - #{$gap-constant}
   );
   $gap-no-unit: strip-unit($gap-constant);
-  $shift: 100 / $col-count * $shift-count + ($gap-no-unit / 2) * 1%;
+  $shift: math.div(100, $col-count) * $shift-count + math.div($gap-no-unit, 2) *
+    1%;
   flex-basis: var(--initialbasis);
   margin-right: calc(#{$gap-constant} / 2);
 
